@@ -6,8 +6,8 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 
 # Carregar os DataFrames
-beers_df = pd.read_csv('c:\\Users\\arthu\\Downloads\\Analise de dados - cerveja\\beers.csv')  
-breweries_df = pd.read_csv('c:\\Users\\arthu\\Downloads\\Analise de dados - cerveja\\breweries.csv')
+beers_df = pd.read_csv('beers.csv')  
+breweries_df = pd.read_csv('breweries.csv')
 
 # Converter a coluna 'brewery_id' do DataFrame beers_df para o tipo object
 beers_df['brewery_id'] = beers_df['brewery_id'].astype('object')
